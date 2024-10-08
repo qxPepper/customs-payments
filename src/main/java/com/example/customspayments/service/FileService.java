@@ -155,11 +155,7 @@ public class FileService {
         if (count == 1) {
             String[] str = new String(buff).split("\\.");
 
-            if (str[1].length() == 2) {
-                return true;
-            } else {
-                return false;
-            }
+            return str[1].length() == 2;
         } else {
             return false;
         }
